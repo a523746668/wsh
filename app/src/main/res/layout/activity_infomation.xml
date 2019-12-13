@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".InfomationActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="122px"
+        android:background="#222222"
+        android:gravity="center"
+        android:text="用户信息"
+        android:textColor="#f6f6f6"
+        android:textSize="50px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.example.myapplication.View.RoundImageView
+        android:id="@+id/logo"
+        android:layout_width="121dp"
+        android:layout_height="121dp"
+        android:src="@mipmap/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23" />
+
+    <TextView
+        android:id="@+id/loginTv1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:gravity="bottom|right"
+        android:text="姓名:"
+        android:textColor="#033491"
+        android:textSize="50px"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintLeft_toLeftOf="@id/guideline1"
+        app:layout_constraintRight_toRightOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <TextView
+        android:id="@+id/ev1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:gravity="bottom"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/infotextsize"
+        app:layout_constraintBottom_toBottomOf="@id/loginTv1"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintLeft_toLeftOf="@id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@id/loginTv1" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="2px"
+        android:background="#0099cc"
+        app:layout_constraintLeft_toLeftOf="@id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/ev1" />
+
+    <TextView
+        android:id="@+id/loginTv2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="bottom|right"
+        android:text="经销商:"
+        android:textColor="#033491"
+        android:textSize="50px"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintLeft_toLeftOf="@id/guideline1"
+        app:layout_constraintRight_toRightOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@id/loginTv1" />
+
+
+    <TextView
+        android:id="@+id/ev2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:focusable="false"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/infotextsize"
+        android:gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="@id/loginTv2"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintLeft_toLeftOf="@id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+
+        app:layout_constraintTop_toTopOf="@id/loginTv2" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="2px"
+        android:background="#0099cc"
+        app:layout_constraintLeft_toLeftOf="@id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/ev2" />
+
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="bottom|right"
+        android:text="电话:"
+        android:textColor="#033491"
+        android:textSize="50px"
+        app:layout_constraintBottom_toBottomOf="@id/tvPhone"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintLeft_toLeftOf="@id/guideline1"
+        app:layout_constraintRight_toRightOf="@id/guideline3"
+        app:layout_constraintTop_toTopOf="@id/tvPhone"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/infotextsize"
+        app:layout_constraintHeight_percent="0.06"
+        android:gravity="bottom"
+        app:layout_constraintLeft_toLeftOf="@id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/loginTv2"
+
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="2px"
+        android:background="#0099cc"
+        app:layout_constraintLeft_toLeftOf="@id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/tvPhone" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="bottom|right"
+        android:text="驾驶证号:"
+        android:textColor="#033491"
+        android:textSize="50px"
+        app:layout_constraintBottom_toBottomOf="@id/tvCode"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintLeft_toLeftOf="@id/guideline1"
+        app:layout_constraintRight_toRightOf="@id/guideline3"
+        app:layout_constraintTop_toTopOf="@id/tvCode"
+        app:layout_constraintVertical_bias="0.5"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tvCode"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/infotextsize"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintLeft_toLeftOf="@id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/tvPhone"
+        android:gravity="bottom"
+
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="2px"
+        android:background="#0099cc"
+        app:layout_constraintLeft_toLeftOf="@id/guideline3"
+        app:layout_constraintRight_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/tvCode" />
+
+
+    <TextView
+        android:id="@+id/sureTv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:background="#033491"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:text="确认核销"
+        android:textColor="#ffffff"
+        android:textSize="50px"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCode"
+        app:layout_constraintWidth_percent="0.88" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
